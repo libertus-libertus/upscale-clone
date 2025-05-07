@@ -1,0 +1,53 @@
+body {
+    font-family: "Jost", sans-serif;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-toggle img {
+    margin-right: 0.5rem; /* Jarak antara lambang dan teks saat dropdown tertutup */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111827;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0.375rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.dropdown-content a img {
+    margin-right: 0; /* Jarak antara lambang dan teks di item dropdown */
+}
+
+.dropdown-content a:hover {
+    background-color: #374151;
+}
