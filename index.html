@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 
 <head>
@@ -9,15 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- css custom -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="https://upscale.id/template/upscale/media/upscale.ico">
 </head>
 
 <body class="bg-black text-white">
 
-    <header class="absolute top-0 left-0 w-full z-20 bg-transparent">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-50 bg-transparent transition-all duration-300" id="main-header">
         <div class="max-w-[1140px] mx-auto px-4 py-4 flex items-center justify-between">
             <div class="h-10">
                 <a href="index.html">
@@ -25,12 +24,13 @@
                 </a>
             </div>
 
+            <!-- Navbar -->
             <nav class="hidden md:flex items-center space-x-11 text-sm">
-                <a href="#" class="font-semibold">Home</a>
-                <a href="#" class="font-semibold">For Business</a>
-                <a href="#" class="font-semibold">For Talent</a>
-                <a href="#" class="font-semibold">Jobs</a>
-                <a href="#" class="font-semibold">F.A.Q</a>
+                <a href="#" class="font-semibold hover:text-cyan-500 transition">Home</a>
+                <a href="#" class="font-semibold hover:text-cyan-500 transition">For Business</a>
+                <a href="#" class="font-semibold hover:text-cyan-500 transition">For Talent</a>
+                <a href="#" class="font-semibold hover:text-cyan-500 transition">Jobs</a>
+                <a href="#" class="font-semibold hover:text-cyan-500 transition">F.A.Q</a>
 
                 <div class="dropdown">
                     <div class="dropdown-toggle">
@@ -39,11 +39,11 @@
                     </div>
                     <div class="dropdown-content">
                         <a href="#">
-                            <img src="https://upscale.id/template/upscale/media/id.png" alt="ID" class="rounded" />
+                            <img src="https://upscale.id/template/upscale/media/id.png" alt="ID" class="rounded w-5 h-3" />
                             <span>ID</span>
                         </a>
                         <a href="#">
-                            <img src="https://upscale.id/template/upscale/media/en.png" alt="EN" class="rounded" />
+                            <img src="https://upscale.id/template/upscale/media/en.png" alt="EN" class="rounded w-5 h-3" />
                             <span>EN</span>
                         </a>
                     </div>
@@ -51,21 +51,22 @@
 
                 <div class="h-4 border-l border-white mx-2"></div>
 
-                <a href="#" class="hover:underline font-semibold">Login</a>
-                <a href="#" class="border border-white rounded-full px-4 py-1 hover:bg-cyan-500 hover:text-white hover:border-none transition">
+                <a href="#" class="hover:underline font-semibold hover:text-cyan-500 transition">Login</a>
+                <a href="#" class="border border-white rounded-full px-4 py-1 hover:bg-cyan-500 hover:text-white hover:border-cyan-500 transition">
                     Live Chat
                 </a>
-            </nav>
+            </nav> <!-- ./navbar -->
         </div>
-    </header>
+    </header> <!-- ./header -->
 
-    <section class="relative h-screen flex items-center">
+    <!-- Hero-section -->
+    <section class="relative h-screen flex items-center hero-section">
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
             <source src="https://upscale.id/template/upscale/media/repeat-medium.mp4?v=1" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <div class="absolute inset-0 bg-black opacity-5 z-10"></div>
+        <div class="absolute inset-0 bg-blue-500 opacity-5 z-10"></div>
 
         <div class="relative z-20 w-full max-w-[1140px] mx-auto px-4 pt-24 md:pt-32 flex flex-col md:flex-row items-start md:items-center justify-between">
             <div class="max-w-xl text-left">
@@ -97,7 +98,151 @@
                 </button>
             </div>
         </div>
+    </section> <!-- ./hero-section -->
+
+    <!-- Hire-section -->
+    <section class="relative py-10 md:py-5 main-content" style="background-color: #37517E;">
+        <!-- Card-hiring -->
+        <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 -mt-16 md:-mt-24">
+            <div class="bg-white rounded-lg p-12 shadow-lg">
+                <h3 class="text-xl text-black font-semibold mb-4 leading-2">Dedicated Team</h3>
+                <p class="text-gray-400 text-sm">Hire talent sebagai karyawan outsource.</p>
+            </div>
+            <div class="bg-white rounded-lg p-12 shadow-lg">
+                <h3 class="text-xl text-black font-semibold mb-4 leading-2">Freelance Team</h3>
+                <p class="text-gray-400 text-sm">Hire talent freelance berbasis man-hour.</p>
+            </div>
+            <div class="bg-white rounded-lg p-12 shadow-lg">
+                <h3 class="text-xl text-black font-semibold mb-4 leading-2">Head Hunter</h3>
+                <p class="text-gray-400 text-sm">Hire talent sebagai karyawan internal anda.</p>
+            </div>
+            <div class="bg-white rounded-lg p-12 shadow-lg">
+                <h3 class="text-xl text-black font-semibold mb-4 leading-2">Project-Based</h3>
+                <p class="text-gray-400 text-sm">Hire vendor / freelance berbasis project.</p>
+            </div>
+        </div> <!-- ./card-hiring -->
+
+        <!-- Partnership -->
+        <div class="max-w-[1140px] mx-auto px-4 mt-12 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
+                <img src="assets/images/partner/logo-1.png" alt="Koinworks" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+                <img src="assets/images/partner/logo-2.png" alt="Cakap" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+                <img src="assets/images/partner/logo-3.png" alt="Gamelift" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+                <img src="assets/images/partner/logo-4.png" alt="Krafthaus" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+                <img src="assets/images/partner/logo-5.png" alt="Crowde" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+                <img src="assets/images/partner/logo-6.png" alt="Wakuliner" class="h-12 grayscale opacity-70 hover:opacity-100 transition">
+            </div>
+        </div> <!-- ./partnership -->
+    </section> <!-- ./hire-section -->
+
+    <!-- Business-focus -->
+    <section class="py-20 main-content" style="background-color: #F1F5F7;">
+        <div class="max-w-[1140px] mx-auto px-10 text-center">
+            <h2 class="text-3xl text-black font-semibold mb-8">Fokuskan perhatian pada strategi pengembangan bisnis Anda<span class="text-cyan-500">.</span></h2>
+            <p class="text-lg text-gray-400 mb-12">Kami akan meng-handle urusan perpajakan, legal dan management. Kami memiliki framework kerja yang terbukti efektif untuk kolaborasi team dan juga terdapat tools memonitor produktivitas secara real-time.</p>
+            <img src="assets/images/devices.png" alt="Dashboard Upscale">
+        </div>
+    </section> <!-- ./business-focus -->
+
+
+    <!-- Hiring-duration -->
+    <section class="py-10 bg-white">
+        <div class="max-w-[1140px] mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
+                <div class="text-center p-8 rounded-lg">
+                    <h3 class="text-xl text-black font-semibold mb-2">Kecepatan Rekrutmen</h3>
+                    <p class="text-gray-500 text-sm">Setelah kami mengetahui kebutuhan bisnis Anda, talent akan ready dalam waktu 14 hari.</p>
+                </div>
+                <div class="text-center p-8 rounded-lg">
+                    <h3 class="text-xl text-black font-semibold mb-2">Kontrol Penuh</h3>
+                    <p class="text-gray-500 text-sm">Anda akan mendapatkan report berkala dan dapat login dalam sistem real-time monitoring kami.</p>
+                </div>
+                <div class="text-center p-8 rounded-lg">
+                    <h3 class="text-xl text-black font-semibold mb-2">Cost-Efficient</h3>
+                    <p class="text-gray-500 text-sm">Tidak perlu mengeluarkan biaya untuk kantor dan team yang tidak produktif.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ./hiring-duration -->
+
+    <!-- Pool-talent -->
+    <section class="py-20 main-content" style="background-color: #F1F5F7;">
+        <div class="max-w-[1140px] mx-auto px-4 text-center">
+            <h2 class="text-3xl text-black font-semibold mb-6">Departemen apa yang Anda butuhkan saat ini?</h2>
+            <p class="text-lg text-gray-500 mb-10">Talent kami mencakup, namun tidak terbatas pada Software Developer, Quality Assurance, Graphic Designer, UX Designer, Product Manager, Keuangan, Data Entry, dll. Talent kami sangat disiplin dan memiliki passion terhadap produktifitas dan teknologi.</p>
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-8 md:gap-0">
+                <div class="p-8 rounded-lg flex-2 flex flex-col justify-center">
+                    <h3 class="text-xl text-gray-800 font-semibold mb-2">Talent Pool</h3>
+                    <p class="text-3xl text-gray-900 font-bold mb-2">100000 +</p>
+                    <p class="text-gray-500 text-sm">Talent pool dari partnership, komunitas, dan universitas.</p>
+                </div>
+                <div class="hidden md:block border-l border-gray-300"></div>
+                <div class="p-8 rounded-lg flex-2 flex flex-col justify-center">
+                    <h3 class="text-xl text-gray-800 font-semibold mb-2">Talent Tersalurkan</h3>
+                    <p class="text-3xl text-gray-900 font-bold mb-2">7000 +</p>
+                    <p class="text-gray-500 text-sm">Talent tersalurkan dan bekerja untuk client kami.</p>
+                </div>
+                <div class="hidden md:block border-l border-gray-300"></div>
+                <div class="p-8 rounded-lg flex-2 flex flex-col justify-center">
+                    <h3 class="text-xl text-gray-800 font-semibold mb-2">Happy Clients</h3>
+                    <p class="text-3xl text-gray-900 font-bold mb-2">100 +</p>
+                    <p class="text-gray-500 text-sm">Sejak tahun 2009, UpScale telah dipercaya oleh ratusan perusahaan.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ./pool-talent -->
+
+    <section class="py-20 main-content bg-white">
+        <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="text-left">
+                <h2 class="text-3xl text-black font-semibold mb-4 leading-[1.5]">
+                    Bagaimana prosedur kami ?<br>
+                    Kami bekerja sesuai dengan kebutuhan bisnis Anda
+                </h2>
+                <p class="text-gray-500 mb-6 leading-[1.7]">Konsultasi singkat dengan konsultan kami akan membantu kami untuk <br> mengetahui kebutuhan bisnis dan talent Anda. Kami pastikan talent yang <br> kami tawarkan adalah talent yang memiliki kualifikasi sesuai dengan <br> kebutuhan.</p>
+                <div>
+                    <p class="text-gray-700 text-xl font-semibold mb-2">Perkiraan waktu untuk konsultasi</p>
+                    <div class="flex items-center gap-2">
+                        <span class="text-7xl text-gray-700 font-semibold">30</span>
+                        <span class="text-xl text-cyan-500 top-96">Menit</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="bg-transparent rounded-full border border-gray-300 h-8 w-8 flex items-center justify-center mr-4">
+                        <span class="text-gray-800 font-semibold">1</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-black font-semibold mb-1">Konsultasikan kebutuhan bisnis Anda</h4>
+                        <p class="text-gray-500">Bisnis analis kami akan membantu Anda dalam menentukan kualifikasi talent.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-transparent rounded-full border border-gray-300 h-8 w-8 flex items-center justify-center mr-4">
+                        <span class="text-gray-800 font-semibold">2</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-black font-semibold mb-1">Talent Assessment</h4>
+                        <p class="text-gray-500">Kami akan melakukan pencarian talent sesuai dengan kebutuhan, melakukan interview, test psikolog, dan online technical test.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-transparent rounded-full border border-gray-300 h-8 w-8 flex items-center justify-center mr-4">
+                        <span class="text-gray-800 font-semibold">3</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-black font-semibold mb-1">Pilih Talent Anda</h4>
+                        <p class="text-gray-500">Kami akan memberikan list kandidat terbaik, dan Anda dapat melakukan assessment tambahan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- manual script -->
+    <script src="assets/js/script.js"></script>
 
 </body>
 
