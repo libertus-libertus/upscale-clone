@@ -14,13 +14,17 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Include Splide CSS  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <style>
+    body {
+      font-family: 'Jost', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-black text-white font-[Jost]">
+<body class="bg-black text-white">
 
   <!-- Header -->
-  <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-transparent" data-aos="fade-down"
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md" data-aos="fade-down"
     data-aos-duration="1000">
     <div class="max-w-[1140px] mx-auto px-4 py-4 flex items-center justify-between">
       <div class="h-10">
@@ -38,12 +42,13 @@
         <a href="#" class="font-semibold hover:text-cyan-500 transition">F.A.Q</a>
 
         <!-- Language Dropdown -->
-        <div class="relative dropdown cursor-pointer">
-          <div tabindex="0" class="dropdown-toggle flex items-center space-x-1">
+        <div class="relative group cursor-pointer">
+          <div class="flex items-center space-x-1">
             <img src="https://upscale.id/template/upscale/media/id.png" alt="ID" class="w-5 h-3 rounded" />
             <span>ID</span>
           </div>
-          <div class="dropdown-content absolute right-0 mt-2 w-24 bg-white text-black rounded shadow-lg py-2 z-50">
+          <div
+            class="absolute hidden group-hover:block right-0 mt-2 w-24 bg-white text-black rounded shadow-lg py-2 z-50">
             <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100">
               <img src="https://upscale.id/template/upscale/media/id.png" alt="ID" class="w-5 h-3 rounded mr-2" />
               <span>ID</span>
@@ -110,86 +115,68 @@
     </div>
   </header>
 
-  <!-- Hero-section -->
-  <section class="relative h-screen flex items-center hero-section">
-    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-      <source src="https://upscale.id/template/upscale/media/repeat-medium.mp4?v=1" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen w-full pt-[100px] flex items-center text-white"
+    style="background-image: url('https://upscale.id/template/upscale/media/video-poster-2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-    <div class="absolute inset-0 bg-blue-500 opacity-5 z-10"></div>
+    <!-- Overlay gelap -->
+    <div class="absolute inset-0 bg-black/60 z-0"></div>
 
-    <div
-      class="relative z-20 w-full max-w-[1140px] mx-auto px-4 pt-24 md:pt-32 flex flex-col md:flex-row items-start md:items-center justify-between space-y-10 md:space-y-0">
-      <div class="max-w-xl text-left space-y-6" data-aos="fade-right" data-aos-duration="1000">
-        <h1 class="text-4xl font-medium leading-snug md:text-5xl lg:text-5xl">
-          Hire Talent On-Demand<span class="text-cyan-500">.</span>
-        </h1>
-
-        <p class="text-2xl font-medium leading-loose md:text-3xl lg:text-3xl">
-          Kami membantu meng-handle semua<br class="hidden md:block">
-          urusan "talent", agar anda dapat fokus<br class="hidden md:block">
-          pada pengembangan bisnis<span class="text-cyan-500">.</span>
+    <!-- Kontainer konten kiri -->
+    <div class="relative z-10 w-full">
+      <div class="max-w-[1140px] mx-auto px-4 text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Scaling Up Your Business</h1>
+        <p class="text-lg md:text-xl mb-6">
+          Service kami cocok untuk membantu berbagai skala perusahaan
         </p>
+        <ul class="text-base md:text-lg list-disc list-inside space-y-2">
+          <li>Enterprise Corporation</li>
+          <li>Startup Company</li>
+          <li>E-commerce</li>
+          <li>Small-business</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <p class="text-xl font-medium leading-relaxed md:text-base">
-          Hire software developers, designers, product manager,<br class="hidden md:block">
-          finance, atau administratif team dari eksklusif network kami.<br class="hidden md:block">
-          Talent kami bisa bekerja secara remote maupun on-site.
-        </p>
+  <!-- Talent Database Info Section -->
+  <section class="bg-[#F1F5F7] text-gray-500 py-20">
+    <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
 
-        <p class="text-xl font-medium leading-relaxed md:text-base">
-          Kontrak full-time maupun freelance yang disesuaikan dengan<br class="hidden md:block">
-          kebutuhan bisnis Anda.
+      <!-- Kolom 1 -->
+      <div data-aos="fade-up">
+        <p class="text-lg leading-relaxed">
+          Dapatkan akses database talent kami untuk membantu scaling up perusahaan anda dengan cara yang flexible. Hal
+          ini sangat krusial bagi bisnis yang ingin berinovasi dengan cepat dan tepat. Terlebih apabila anda memiliki
+          roadmap project yang baik dan strategi yang tepat.
         </p>
       </div>
 
-      <!-- Button Section -->
-      <div
-        class="mt-4 md:mt-0 md:mr-12 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-md md:pt-24"
-        data-aos="fade-left" data-aos-duration="1000">
-        <button
-          class="flex-1 bg-cyan-500 text-white px-6 py-4 rounded-full text-base font-medium hover:bg-cyan-600 transition whitespace-nowrap">
-          Request Quotation
-        </button>
+      <!-- Kolom 2 -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <p class="text-lg leading-relaxed">
+          Sejak tahun 2009, telah membantu banyak perusahaan untuk mewujudkan harapan dengan mencarikan talent atau
+          vendor yang tepat. Dengan database talent pool kami yang jumlahnya lebih dari 5000 talent, kami dapat membantu
+          anda mewujudkan visi anda.
+        </p>
+      </div>
 
-        <button
-          class="flex-1 border border-white bg-transparent text-white px-6 py-4 rounded-full text-base font-medium hover:bg-white hover:text-black hover:border-cyan-500 transition whitespace-nowrap">
-          Join as Talent
-        </button>
+      <!-- Kolom 3: Galeri -->
+      <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+        <img src="https://upscale.id/template/upscale/media/music/image-15.jpg" alt="Gallery 1"
+          class="rounded-lg w-full h-auto object-cover shadow-md">
+        <img src="https://upscale.id/template/upscale/media/music/image-1.jpg" alt="Gallery 2"
+          class="rounded-lg w-full h-auto object-cover shadow-md">
+        <img src="https://upscale.id/template/upscale/media/music/image-3.jpg" alt="Gallery 3"
+          class="rounded-lg w-full h-auto object-cover shadow-md">
+        <img src="https://upscale.id/template/upscale/media/music/image-13.jpg" alt="Gallery 4"
+          class="rounded-lg w-full h-auto object-cover shadow-md">
       </div>
     </div>
   </section>
 
   <!-- Hire-section -->
   <section class="relative py-8 bg-[#37517E]">
-    <!-- Card Hiring -->
-    <div class="max-w-[1140px] mx-auto px-4">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 -mt-8 md:-mt-24">
-        <!-- Card Item -->
-        <div class="bg-white rounded-lg p-8 md:p-12 shadow-lg text-center" data-aos="fade-down"
-          data-aos-duration="1000">
-          <h3 class="text-xl font-semibold text-black mb-4 leading-6">Dedicated Team</h3>
-          <p class="text-sm text-gray-400">Hire talent sebagai karyawan outsource.</p>
-        </div>
-        <div class="bg-white rounded-lg p-8 md:p-12 shadow-lg text-center" data-aos="fade-down"
-          data-aos-duration="1000">
-          <h3 class="text-xl font-semibold text-black mb-4 leading-6">Freelance Team</h3>
-          <p class="text-sm text-gray-400">Hire talent freelance berbasis man-hour.</p>
-        </div>
-        <div class="bg-white rounded-lg p-8 md:p-12 shadow-lg text-center" data-aos="fade-down"
-          data-aos-duration="1000">
-          <h3 class="text-xl font-semibold text-black mb-4 leading-6">Head Hunter</h3>
-          <p class="text-sm text-gray-400">Hire talent sebagai karyawan internal anda.</p>
-        </div>
-        <div class="bg-white rounded-lg p-8 md:p-12 shadow-lg text-center" data-aos="fade-down"
-          data-aos-duration="1000">
-          <h3 class="text-xl font-semibold text-black mb-4 leading-6">Project-Based</h3>
-          <p class="text-sm text-gray-400">Hire vendor / freelance berbasis project.</p>
-        </div>
-      </div>
-    </div>
-
     <div class="max-w-[1140px] mx-auto px-4 mt-12 py-8">
       <div id="partner-slider" class="splide">
         <div class="splide__track">
@@ -236,431 +223,120 @@
     </div>
   </section>
 
-  <!-- Business-focus -->
-  <section class="py-16 md:py-20 bg-white main-content">
-    <div class="max-w-[1140px] mx-auto px-6 sm:px-10 text-center">
-      <h2 class="text-2xl sm:text-3xl lg:text-3xl text-black mb-6 sm:mb-8 leading-snug" data-aos="fade-down" data-aos-duration="1000">
-        Fokuskan perhatian pada strategi pengembangan bisnis Anda<span class="text-cyan-500">.</span>
-      </h2>
-      <p class="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 leading-relaxed" data-aos="fade-down" data-aos-duration="1000"> Kami akan meng-handle urusan
-        perpajakan, legal dan management. Kami memiliki <br> framework kerja yang terbukti efektif untuk kolaborasi
-        team dan juga terdapat tools <br> memonitor produktivitas secara real-time.</p>
-      <div class="w-full flex justify-center">
-        <img src="assets/images/devices.png" alt="Dashboard Upscale" class="w-full max-w-4xl h-auto">
+  <!-- Section: Case Studies / Blog Style -->
+  <section class="bg-white py-20">
+    <div class="max-w-[1140px] mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <div class="group">
+          <div class="relative overflow-hidden rounded-lg shadow-md">
+            <img src="https://upscale.id/template/upscale/media/music/image-16.jpg" alt="Malaysia Team"
+              class="w-full h-[220px] object-cover">
+            <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
+              AI STARTUP COMPANY
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Malaysia Startup, Dedicated Team</h3>
+          <p class="text-sm text-gray-700 mt-2">
+            2020 kami membantu salah satu startup malaysia yang melayani perusahaan oil & gas untuk entry & extraction
+            data untuk AI Learning
+          </p>
+          <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
+            Data Entry Dedicated Team &nbsp;&rarr;
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group">
+          <div class="relative overflow-hidden rounded-lg shadow-md">
+            <img src="https://upscale.id/template/upscale/media/photo/image-10.jpg" alt="Cakap Team"
+              class="w-full h-[220px] object-cover">
+            <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
+              STARTUP EDUCATION
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Cakap, Dedicated Office & Team</h3>
+          <p class="text-sm text-gray-700 mt-2">
+            Sejak tahun 2015 s/d 2020 membantu Cakap mendapatkan belasan programer & mengelola development office di
+            jogja.
+          </p>
+          <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
+            Dodi Prakoso Wibowo &nbsp;&rarr;
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group">
+          <div class="relative overflow-hidden rounded-lg shadow-md">
+            <img src="https://upscale.id/template/upscale/media/photo/image-9.jpg" alt="Krafthaus Team"
+              class="w-full h-[220px] object-cover">
+            <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
+              DIGITAL AGENCY
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Krafthaus, Corporate Management</h3>
+          <p class="text-sm text-gray-700 mt-2">
+            Sejak tahun 2012 telah dipercaya oleh perusahaan Australia sebagai Managing Director untuk mengelola cabang
+            di Indonesia
+          </p>
+          <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
+            Arief Widyananda &nbsp;&rarr;
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Hiring-duration -->
-  <section class="py-12 bg-white">
-    <div class="max-w-[1140px] mx-auto px-6 sm:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1000">
-          <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Kecepatan Rekrutmen</h3>
-          <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Setelah kami mengetahui kebutuhan
-            bisnis Anda, talent akan ready dalam waktu 14 hari.</p>
-        </div>
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1400">
-          <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Kontrol Penuh</h3>
-          <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Anda akan mendapatkan report berkala
-            dan dapat login dalam sistem real-time monitoring kami.</p>
-        </div>
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1800">
-          <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Cost-Efficient</h3>
-          <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Tidak perlu mengeluarkan biaya untuk
-            kantor dan team yang tidak produktif.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pool-talent -->
-  <section class="py-12 md:py-20 main-content bg-[#F1F5F7]">
-    <div class="max-w-[1140px] mx-auto px-4 text-center">
-      <h2 class="text-2xl md:text-3xl text-black font-semibold mb-4 md:mb-6" data-aos="fade-down" data-aos-duration="1000">
-        Departemen apa yang Anda butuhkan saat ini?
+  <!-- Section: Consultation Form -->
+  <section class="bg-[#f5fbff] py-20">
+    <div class="max-w-5xl mx-auto text-center px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#001c3d]">
+        Simple & an affordable price plans for everyone
       </h2>
-      <p class="text-base md:text-lg text-gray-500 mb-8 md:mb-10 max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="1000">
-        Talent kami mencakup, namun tidak terbatas pada Software Developer, Quality Assurance, Graphic Designer,
-        UX Designer, Product Manager, Keuangan, Data Entry, dll. Talent kami sangat disiplin dan memiliki
-        passion terhadap produktifitas dan teknologi.
+      <p class="text-sm text-[#5f7896] mt-2">
+        Paket harga dengan konsep yang sederhana & terjangkau untuk semua orang. Baik skala <br />
+        Coorporate, startup sampai dengan UKM
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-0">
-        <div class="p-6 md:p-8 rounded-lg flex flex-col justify-center">
-          <h3 class="text-lg md:text-xl text-gray-800 font-semibold mb-2">Talent Pool</h3>
-          <span class="count-up text-3xl font-bold text-gray-900" data-target="100000" data-suffix=" +">0</span>
-          <p class="text-gray-500 text-xs md:text-sm">Talent pool dari partnership, komunitas, dan universitas.</p>
-        </div>
-        <div
-          class="p-6 md:p-8 rounded-lg flex flex-col justify-center border-t border-b sm:border-0 sm:border-l sm:border-r border-gray-300">
-          <h3 class="text-lg md:text-xl text-gray-800 font-semibold mb-2">Talent Tersalurkan</h3>
-          <p class="text-2xl md:text-3xl text-gray-900 font-bold mb-2 count-up" data-target="7000" data-suffix=" +">0
+
+      <!-- Form Box -->
+      <div class="mt-10 bg-white shadow-md rounded-md p-6 md:p-10 text-left flex flex-col md:flex-row gap-6">
+
+        <!-- Left Text -->
+        <div class="md:w-1/2">
+          <h3 class="text-xl font-semibold text-[#001c3d] mb-2">Ingin Konsultasi<br />Kebutuhan Anda?</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Bisnis analis kami akan membantu Anda <br />
+            dalam menentukan kualifikasi talent.
           </p>
-          <p class="text-gray-500 text-xs md:text-sm">Talent tersalurkan dan bekerja untuk client kami.</p>
-        </div>
-        <div class="p-6 md:p-8 rounded-lg flex flex-col justify-center">
-          <h3 class="text-lg md:text-xl text-gray-800 font-semibold mb-2">Happy Clients</h3>
-          <p class="text-2xl md:text-3xl text-gray-900 font-bold mb-2 count-up" data-target="100" data-suffix=" +">0</p>
-          <p class="text-gray-500 text-xs md:text-sm">Sejak tahun 2009, UpScale telah dipercaya oleh ratusan perusahaan.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Procedure -->
-  <section class="py-20 main-content bg-white">
-    <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
-        <h2 class="text-3xl text-black font-medium mb-4">
-          Bagaimana prosedur kami?<br>
-          Kami bekerja sesuai dengan kebutuhan bisnis Anda
-        </h2>
-        <p class="text-gray-500 mb-6 leading-relaxed">
-          Konsultasi singkat dengan konsultan kami akan membantu kami untuk mengetahui kebutuhan bisnis dan
-          talent Anda.
-          Kami pastikan talent yang kami tawarkan adalah talent yang memiliki kualifikasi sesuai dengan
-          kebutuhan.
-        </p>
-        <div class="mb-8">
-          <p class="text-gray-700 text-lg font-semibold mb-2">Perkiraan waktu untuk konsultasi</p>
-          <div class="flex items-end gap-2">
-            <span class="count-up text-5xl font-bold text-gray-800" data-target="30">0</span>
-            <span class="text-xl text-cyan-500 font-medium pb-2">Menit</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="space-y-8" data-aos="fade-left" data-aos-duration="1000">
-        <ol class="relative border-s border-gray-200 dark:border-gray-300">
-          <!-- Step 1 -->
-          <li class="mb-10 ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">1</span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Konsultasikan kebutuhan
-              bisnis Anda</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              Bisnis analis kami akan membantu Anda dalam menentukan kualifikasi talent.
-            </p>
-          </li>
-          <!-- Step 2 -->
-          <li class="mb-10 ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">2</span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">Talent Assessment</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Kami akan melakukan pencarian talent sesuai dengan kebutuhan, melakukan interview, test
-              psikolog, dan online technical test.
-            </p>
-          </li>
-          <!-- Step 3 -->
-          <li class="ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">3</span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">Pilih Talent Anda</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Kami akan memberikan list kandidat terbaik, dan Anda dapat melakukan assessment tambahan.
-            </p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-  <!-- ./procedure -->
-
-  <!-- Contact -->
-  <section
-    class="bg-[url('https://upscale.id/template/upscale/media/hd-4.jpg')] bg-fixed bg-cover bg-center bg-no-repeat parallax-background h-[450px] relative">
-    <div class="absolute inset-0 bg-black/50"></div>
-
-    <div class="relative z-10 h-full flex items-center justify-center" data-aos="fade-down" data-aos-duration="1000">
-      <div class="max-w-[1140px] mx-auto px-4 w-full grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-        <div class="text-center md:text-left">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ingin Konsultasi Kebutuhan Anda?</h2>
-          <p class="text-lg text-white/80 max-w-xl mb-6">
-            Bisnis analis kami selalu siap untuk mendengar kebutuhan bisnis Anda, secara GRATIS.
-          </p>
-        </div>
-
-        <div class="flex justify-center md:justify-end">
-          <button
-            class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-16 rounded transition duration-300">
-            Mulai Konsultasi Sekarang
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ./contact -->
-
-  <!-- Next-step -->
-  <section class="py-20 main-content" style="background-color: #F1F5F7;">
-    <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
-        <h2 class="text-3xl text-black font-medium mb-4">
-          Setelah Anda mendapatkan talent <br> terbaik, Kami tetap mensupport <br> kebutuhan bisnis Anda
-        </h2>
-        <p class="text-gray-500 mb-6 leading-relaxed">
-          Setelah Anda mendapatkan talent, kami segera mempersiapkan semua dokumen HR seperti kontrak dan
-          perpajakan. Kami juga mengelola seputar manajemen seperti timeline, finance, KPI building, dll.
-        </p>
-        <div class="mb-8">
-          <p class="text-gray-700 text-lg font-semibold mb-2">Estimated Talent Matching</p>
-          <div class="flex items-end gap-2">
-            <span class="count-up text-5xl font-bold text-gray-800" data-target="14">0</span>
-            <span class="text-xl text-cyan-500 font-medium pb-2">days</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="space-y-8" data-aos="fade-left" data-aos-duration="1000">
-        <ol class="relative border-s border-gray-200 dark:border-gray-300">
-          <!-- Step 1 -->
-          <li class="mb-10 ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">4</span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Paperwork</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              Persiapan kontrak, pembuatan akun real-time monitoring agar kedepan anda dapat memastikan
-              produktifitas talent, dll.
-            </p>
-          </li>
-          <!-- Step 2 -->
-          <li class="mb-10 ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">5</span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">Talent Siap Bekerja</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Talent siap membantu mengembangkan bisnis Anda.
-            </p>
-          </li>
-          <!-- Step 3 -->
-          <li class="ms-6">
-            <span
-              class="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full -start-4 ring-9 ring-gray-200 text-gray-700">6</span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">Support</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Kami juga dapat membantu anda mengelola beberapa hal seperti coworkspace, absensi,
-              perijinan, timeline, task, KPI dll
-            </p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- F.A.Q -->
-  <section class="py-20 main-content bg-white">
-    <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[0.8fr_2.2fr] gap-8 items-start">
-      <!-- Bagian kiri (accordion) -->
-      <div class="space-y-4 w-full" data-aos="fade-right" data-aos-duration="1000">
-        <h2 class="text-2xl font-medium text-gray-900 mb-4">Recruitment Type <span class="text-cyan-500">.</span></h2>
-        <p class="text-gray-800 text-sm leading-relaxed">Tentukan tipe recruitment anda. Pilihan fasilitas tidak
-          bersifat wajib,
-          sehingga masih dapat disesuaikan kembali sesuai kebutuhan.</p>
-
-        <!-- Accordion 1 -->
-        <div class="overflow-hidden border border-gray-200 rounded-lg">
-          <button
-            class="flex items-center justify-between w-full px-3 py-2.5 text-gray-900 font-medium text-left focus:outline-none transition-colors duration-200 bg-white hover:bg-gray-50 text-sm"
-            id="accordion-button-1" aria-controls="accordion-content-1" aria-expanded="false">
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                </path>
-              </svg>
-              <span class="truncate">Dedicated Team / Freelance Team</span>
+          <div class="text-sm text-[#001c3d] space-y-2">
+            <div class="flex items-center gap-2">
+              <img src="https://flagcdn.com/w40/id.png" alt="Indonesia Flag" class="w-5 h-4" />
+              +62 87 888 666 531
             </div>
-            <svg id="accordion-icon-1"
-              class="w-4 h-4 text-gray-700 shrink-0 transform rotate-0 transition-transform duration-200" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="accordion-content-1" class="px-3 pb-3 hidden" aria-labelledby="accordion-button-1">
-            <p class="text-gray-600 text-xs leading-relaxed">
-              Pencarian talent terbaik untuk kebutuhan bisnis Anda. Talent bersedia untuk bekerja on-site
-              maupun remote dan full-time maupun part-time.
-            </p>
-          </div>
-        </div>
-
-        <!-- Accordion 2 -->
-        <div class="overflow-hidden border border-gray-200 rounded-lg">
-          <button
-            class="flex items-center justify-between w-full px-3 py-2.5 text-gray-900 font-medium text-left focus:outline-none transition-colors duration-200 bg-white hover:bg-gray-50 text-sm"
-            id="accordion-button-2" aria-controls="accordion-content-2" aria-expanded="false">
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                </path>
-              </svg>
-              <span class="truncate">Head Hunter</span>
+            <div class="flex items-center gap-2">
+              <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-5 h-4" />
+              +61 3 9010 6067
             </div>
-            <svg id="accordion-icon-2"
-              class="w-4 h-4 text-gray-700 shrink-0 transform rotate-0 transition-transform duration-200" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="accordion-content-2" class="px-3 pb-3 hidden" aria-labelledby="accordion-button-2">
-            <p class="text-gray-600 text-xs leading-relaxed">
-              Layanan pencarian eksekutif untuk posisi-posisi strategis dalam perusahaan Anda.
-            </p>
           </div>
         </div>
 
-        <!-- Accordion 3 -->
-        <div class="overflow-hidden border border-gray-200 rounded-lg">
-          <button
-            class="flex items-center justify-between w-full px-3 py-2.5 text-gray-900 font-medium text-left focus:outline-none transition-colors duration-200 bg-white hover:bg-gray-50 text-sm"
-            id="accordion-button-3" aria-controls="accordion-content-3" aria-expanded="false">
-            <div class="flex items-center">
-              <svg class="w-4 h-4 mr-2 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                </path>
-              </svg>
-              <span class="truncate">Project-Based</span>
-            </div>
-            <svg id="accordion-icon-3"
-              class="w-4 h-4 text-gray-700 shrink-0 transform rotate-0 transition-transform duration-200" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="accordion-content-3" class="px-3 pb-3 hidden" aria-labelledby="accordion-button-3">
-            <p class="text-gray-600 text-xs leading-relaxed">
-              Penyediaan tim profesional untuk menyelesaikan proyek khusus dengan durasi tertentu.
-            </p>
+        <!-- Form -->
+        <div class="md:w-1/2 space-y-4">
+          <input type="text" placeholder="Name"
+            class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
+          <div class="flex flex-col md:flex-row gap-4">
+            <input type="text" placeholder="Phone"
+              class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
+            <input type="email" placeholder="Email"
+              class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
           </div>
-        </div>
-      </div>
-
-      <!-- Bagian kanan (tabel) -->
-      <div class="w-full" data-aos="fade-left" data-aos-duration="1000">
-        <div class="rounded-lg overflow-x-auto shadow-sm">
-          <table class="w-full text-xs sm:text-sm">
-            <thead class="bg-gray-100">
-              <tr>
-                <th class="p-3 font-medium text-gray-700 text-left whitespace-nowrap">Fasilitas</th>
-                <th class="p-3 font-medium text-gray-700 text-center whitespace-nowrap">Dedicated Team</th>
-                <th class="p-3 font-medium text-gray-700 text-center whitespace-nowrap">Head Hunter</th>
-                <th class="p-3 font-medium text-gray-700 text-center whitespace-nowrap">Project-Based</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <!-- Data Rows -->
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">Talent Hunt</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">CoWork Space</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-center"></td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">Remote Worker / On-Site Worker</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-center"></td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">Resource Operational & Management</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-center"></td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">HR Manager</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-center"></td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">IT Consultant</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">Resource Tax and Legal</td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3 text-gray-700 whitespace-nowrap">Shared Project Risk & Responsibility</td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-center"></td>
-                <td class="p-3 text-green-600 text-center">
-                  <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <textarea rows="4" placeholder="Write something ..."
+            class="w-full border border-gray-300 rounded px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+          <button class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+            Send inquiry
+          </button>
         </div>
       </div>
     </div>
@@ -721,11 +397,10 @@
     </div>
   </footer>
 
-  <!-- Javascript -->
+  <!-- Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>
