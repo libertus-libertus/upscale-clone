@@ -121,24 +121,33 @@
 
     <div
       class="relative z-20 w-full max-w-[1140px] mx-auto px-4 pt-24 md:pt-32 flex flex-col md:flex-row items-start md:items-center justify-between space-y-10 md:space-y-0">
+      <!-- 🔧 CHANGE: Added space-y-10 for vertical spacing on mobile -->
+
+      <!-- Text Content -->
       <div class="max-w-xl text-left space-y-6" data-aos="fade-right" data-aos-duration="1000">
+        <!-- 🔧 CHANGE: Added space-y-6 for spacing between paragraphs -->
+
         <h1 class="text-4xl font-medium leading-snug md:text-5xl lg:text-5xl">
+          <!-- 🔧 CHANGE: Increased base text size from text-3xl → text-4xl for better mobile visibility -->
           Hire Talent On-Demand<span class="text-cyan-500">.</span>
         </h1>
 
         <p class="text-2xl font-medium leading-loose md:text-3xl lg:text-3xl">
+          <!-- 🔧 CHANGE: Base size text-xl → text-2xl and added leading-loose -->
           Kami membantu meng-handle semua<br class="hidden md:block">
           urusan "talent", agar anda dapat fokus<br class="hidden md:block">
           pada pengembangan bisnis<span class="text-cyan-500">.</span>
         </p>
 
         <p class="text-xl font-medium leading-relaxed md:text-base">
+          <!-- 🔧 CHANGE: Base size text-sm → text-xl for mobile, added leading-relaxed -->
           Hire software developers, designers, product manager,<br class="hidden md:block">
           finance, atau administratif team dari eksklusif network kami.<br class="hidden md:block">
           Talent kami bisa bekerja secara remote maupun on-site.
         </p>
 
         <p class="text-xl font-medium leading-relaxed md:text-base">
+          <!-- 🔧 CHANGE: Base size text-sm → text-xl for mobile, added leading-relaxed -->
           Kontrak full-time maupun freelance yang disesuaikan dengan<br class="hidden md:block">
           kebutuhan bisnis Anda.
         </p>
@@ -148,18 +157,23 @@
       <div
         class="mt-4 md:mt-0 md:mr-12 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-md md:pt-24"
         data-aos="fade-left" data-aos-duration="1000">
+        <!-- 🔧 CHANGE: Use flex-col + space-y-4 on mobile for better button stacking -->
+
         <button
           class="flex-1 bg-cyan-500 text-white px-6 py-4 rounded-full text-base font-medium hover:bg-cyan-600 transition whitespace-nowrap">
+          <!-- 🔧 CHANGE: text-sm → text-base for better readability on small screens -->
           Request Quotation
         </button>
 
         <button
           class="flex-1 border border-white bg-transparent text-white px-6 py-4 rounded-full text-base font-medium hover:bg-white hover:text-black hover:border-cyan-500 transition whitespace-nowrap">
+          <!-- 🔧 CHANGE: text-sm → text-base for better readability on small screens -->
           Join as Talent
         </button>
       </div>
     </div>
   </section>
+  <!-- ./hero-section -->
 
   <!-- Hire-section -->
   <section class="relative py-8 bg-[#37517E]">
@@ -239,10 +253,10 @@
   <!-- Business-focus -->
   <section class="py-16 md:py-20 bg-white main-content">
     <div class="max-w-[1140px] mx-auto px-6 sm:px-10 text-center">
-      <h2 class="text-2xl sm:text-3xl lg:text-3xl text-black mb-6 sm:mb-8 leading-snug" data-aos="fade-down" data-aos-duration="1000">
+      <h2 class="text-2xl sm:text-3xl lg:text-3xl text-black mb-6 sm:mb-8 leading-snug">
         Fokuskan perhatian pada strategi pengembangan bisnis Anda<span class="text-cyan-500">.</span>
       </h2>
-      <p class="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 leading-relaxed" data-aos="fade-down" data-aos-duration="1000"> Kami akan meng-handle urusan
+      <p class="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 leading-relaxed"> Kami akan meng-handle urusan
         perpajakan, legal dan management. Kami memiliki <br> framework kerja yang terbukti efektif untuk kolaborasi
         team dan juga terdapat tools <br> memonitor produktivitas secara real-time.</p>
       <div class="w-full flex justify-center">
@@ -255,17 +269,17 @@
   <section class="py-12 bg-white">
     <div class="max-w-[1140px] mx-auto px-6 sm:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1000">
+        <div class="text-center p-6 sm:p-8">
           <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Kecepatan Rekrutmen</h3>
           <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Setelah kami mengetahui kebutuhan
             bisnis Anda, talent akan ready dalam waktu 14 hari.</p>
         </div>
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1400">
+        <div class="text-center p-6 sm:p-8">
           <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Kontrol Penuh</h3>
           <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Anda akan mendapatkan report berkala
             dan dapat login dalam sistem real-time monitoring kami.</p>
         </div>
-        <div class="text-center p-6 sm:p-8" data-aos="fade-down" data-aos-duration="1800">
+        <div class="text-center p-6 sm:p-8">
           <h3 class="text-lg sm:text-xl text-black font-semibold mb-3">Cost-Efficient</h3>
           <p class="text-sm sm:text-base text-gray-500 leading-relaxed">Tidak perlu mengeluarkan biaya untuk
             kantor dan team yang tidak produktif.</p>
@@ -277,10 +291,9 @@
   <!-- Pool-talent -->
   <section class="py-12 md:py-20 main-content bg-[#F1F5F7]">
     <div class="max-w-[1140px] mx-auto px-4 text-center">
-      <h2 class="text-2xl md:text-3xl text-black font-semibold mb-4 md:mb-6" data-aos="fade-down" data-aos-duration="1000">
-        Departemen apa yang Anda butuhkan saat ini?
+      <h2 class="text-2xl md:text-3xl text-black font-semibold mb-4 md:mb-6">Departemen apa yang Anda butuhkan saat ini?
       </h2>
-      <p class="text-base md:text-lg text-gray-500 mb-8 md:mb-10 max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="1000">
+      <p class="text-base md:text-lg text-gray-500 mb-8 md:mb-10 max-w-3xl mx-auto">
         Talent kami mencakup, namun tidak terbatas pada Software Developer, Quality Assurance, Graphic Designer,
         UX Designer, Product Manager, Keuangan, Data Entry, dll. Talent kami sangat disiplin dan memiliki
         passion terhadap produktifitas dan teknologi.
@@ -311,7 +324,7 @@
   <!-- Procedure -->
   <section class="py-20 main-content bg-white">
     <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
+      <div class="text-left">
         <h2 class="text-3xl text-black font-medium mb-4">
           Bagaimana prosedur kami?<br>
           Kami bekerja sesuai dengan kebutuhan bisnis Anda
@@ -331,7 +344,7 @@
         </div>
       </div>
 
-      <div class="space-y-8" data-aos="fade-left" data-aos-duration="1000">
+      <div class="space-y-8">
         <ol class="relative border-s border-gray-200 dark:border-gray-300">
           <!-- Step 1 -->
           <li class="mb-10 ms-6">
@@ -373,7 +386,7 @@
     class="bg-[url('https://upscale.id/template/upscale/media/hd-4.jpg')] bg-fixed bg-cover bg-center bg-no-repeat parallax-background h-[450px] relative">
     <div class="absolute inset-0 bg-black/50"></div>
 
-    <div class="relative z-10 h-full flex items-center justify-center" data-aos="fade-down" data-aos-duration="1000">
+    <div class="relative z-10 h-full flex items-center justify-center">
       <div class="max-w-[1140px] mx-auto px-4 w-full grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         <div class="text-center md:text-left">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ingin Konsultasi Kebutuhan Anda?</h2>
@@ -396,7 +409,7 @@
   <!-- Next-step -->
   <section class="py-20 main-content" style="background-color: #F1F5F7;">
     <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
+      <div class="text-left">
         <h2 class="text-3xl text-black font-medium mb-4">
           Setelah Anda mendapatkan talent <br> terbaik, Kami tetap mensupport <br> kebutuhan bisnis Anda
         </h2>
@@ -413,7 +426,7 @@
         </div>
       </div>
 
-      <div class="space-y-8" data-aos="fade-left" data-aos-duration="1000">
+      <div class="space-y-8">
         <ol class="relative border-s border-gray-200 dark:border-gray-300">
           <!-- Step 1 -->
           <li class="mb-10 ms-6">
@@ -453,7 +466,7 @@
   <section class="py-20 main-content bg-white">
     <div class="max-w-[1140px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-[0.8fr_2.2fr] gap-8 items-start">
       <!-- Bagian kiri (accordion) -->
-      <div class="space-y-4 w-full" data-aos="fade-right" data-aos-duration="1000">
+      <div class="space-y-4 w-full">
         <h2 class="text-2xl font-medium text-gray-900 mb-4">Recruitment Type <span class="text-cyan-500">.</span></h2>
         <p class="text-gray-800 text-sm leading-relaxed">Tentukan tipe recruitment anda. Pilihan fasilitas tidak
           bersifat wajib,
@@ -543,7 +556,7 @@
       </div>
 
       <!-- Bagian kanan (tabel) -->
-      <div class="w-full" data-aos="fade-left" data-aos-duration="1000">
+      <div class="w-full">
         <div class="rounded-lg overflow-x-auto shadow-sm">
           <table class="w-full text-xs sm:text-sm">
             <thead class="bg-gray-100">
@@ -667,7 +680,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#37517E] py-8 md:py-8" data-aos="fade-down" data-aos-duration="1000">
+  <footer class="bg-[#37517E] py-8 md:py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div class="flex flex-col">
