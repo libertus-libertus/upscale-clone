@@ -1,3 +1,28 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+/* Modal transition */
+.modal {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-hidden {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+}
+
+.modal-visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+
+/* Input focus effect */
+.input-field:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
