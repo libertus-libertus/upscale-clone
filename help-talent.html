@@ -17,6 +17,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <style type="text/tailwindcss">
     @layer base {
       html {
@@ -187,7 +189,7 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="relative min-h-screen">
+    <section class="relative min-h-screen pt-24 md:pt-28 lg:pt-10">
       <!-- Background Video -->
       <video muted loop playsinline
         class="absolute top-0 left-0 w-full h-full object-cover opacity-70 z-0"
@@ -200,24 +202,76 @@
 
       <!-- Konten -->
       <div class="relative z-20 flex items-center justify-center min-h-screen">
-        <div class="container px-6 sm:px-10 lg:px-28">
-          <div class="max-w-3xl" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Scaling Up Your Business
-            </h1>
-            <p class="text-xl sm:text-xl text-gray-300 mb-6">
-              Service kami cocok untuk membantu berbagai <br class="hidden sm:inline"> skala perusahaan
-            </p>
-            <ul class="list-disc list-inside text-white space-y-2">
-              <li class="text-xl">Enterprise Corporation</li>
-              <li class="text-xl">Startup Company</li>
-              <li class="text-xl">E-commerce</li>
-              <li class="text-xl">Small-business</li>
-            </ul>
+        <div class="container px-6 sm:px-10 lg:px-28 w-full">
+          <!-- Flex Container -->
+          <div class="flex flex-col lg:flex-col xl:flex-row items-center xl:items-stretch justify-between gap-12 xl:gap-0">
+            
+            <!-- Kiri: Teks -->
+            <div class="w-full xl:w-1/2 max-w-3xl" data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Upgrade kemampuan dan networkmu<span class="text-cyan-600 font-semibold">.</span>
+              </h1>
+              <p class="text-xl text-gray-300 mb-6">
+                Bergabung dan dapatkan beberapa manfaat:
+              </p>
+              <ul class="list-disc list-inside text-white space-y-2">
+                <li class="text-xl">Karir di perusahaan idaman</li>
+                <li class="text-xl">Project as a freelance</li>
+                <li class="text-xl">Pasif Income</li>
+                <li class="text-xl">Free Education</li>
+                <li class="text-xl">Konsultasi senior programer</li>
+                <li class="text-xl">Kerja Remote (lokal/International)</li>
+              </ul>
+            </div>
+
+            <!-- Kanan: Tombol Join -->
+            <div class="w-full xl:w-1/2 flex items-center justify-center xl:justify-end py-8 xl:py-0" data-aos="fade-left" data-aos-duration="1000">
+              <a href="#"
+                class="inline-flex items-center justify-center border border-white hover:border-cyan-500 hover:text-cyan-500 text-white font-medium rounded-full px-8 py-3 transition-colors duration-300 text-nowrap text-lg">
+                Join Community
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
+
+    <section class="bg-[#37517E] pb-16 pt-10 sm:pt-14 md:pt-10">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-28">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-6 flex items-start" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="p-3 mr-4 flex-shrink-0">
+                      <i class="text-5xl text-blue-500 lnr lnr-heart"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-semibold text-white mb-2">Get the Dream Jobs</h3>
+                      <p class="text-white text-sm">Helps talent to get the best-matched company and career.</p>
+                  </div>
+              </div>
+
+              <div class="p-6 flex items-start" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="p-3 mr-4 flex-shrink-0">
+                      <i class="text-5xl text-blue-500 lnr lnr-rocket"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-semibold text-white mb-2">Skill Improvement</h3>
+                      <p class="text-white text-sm">FREE access to our educational classes.</p>
+                  </div>
+              </div>
+
+              <div class="p-6 flex items-start" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                  <div class="p-3 mr-4 flex-shrink-0">
+                      <i class="text-5xl text-blue-500 lnr lnr-list"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-semibold text-white mb-2">Know your Rights</h3>
+                      <p class="text-white text-sm">Helps talent to get their rights based on company rules and regulation.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- Talent -->
     <section class="bg-[#F1F5F7] text-gray-500 py-20">
@@ -251,153 +305,6 @@
             class="rounded-lg w-full h-auto object-cover shadow-md">
           <img src="https://upscale.id/template/upscale/media/music/image-13.jpg" alt="Gallery 4"
             class="rounded-lg w-full h-auto object-cover shadow-md">
-        </div>
-      </div>
-    </section>
-
-    <!-- Partnership Section -->
-    <section class="bg-[#37517E] pb-16 pt-10 sm:pt-14 md:pt-10">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-28">
-        <div class="swiper partner-swiper">
-          <div class="swiper-wrapper items-center">
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-1.png" alt="Koinworks" class="max-h-14 object-contain" />
-            </div>
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-2.png" alt="Cakap" class="max-h-14 object-contain" />
-            </div>
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-3.png" alt="Gameloft" class="max-h-14 object-contain" />
-            </div>
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-4.png" alt="Krafthaus" class="max-h-14 object-contain" />
-            </div>
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-5.png" alt="Crowde" class="max-h-14 object-contain" />
-            </div>
-            <div class="swiper-slide flex justify-center">
-              <img src="src/partner/logo-6.png" alt="Wakuliner" class="max-h-14 object-contain" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Case Studies / Blog Style -->
-    <section class="bg-white py-20">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-28">
-        <div class="grid md:grid-cols-3 gap-10">
-
-          <!-- Card 1 -->
-          <div class="group">
-            <div class="relative overflow-hidden rounded-lg shadow-md">
-              <img src="https://upscale.id/template/upscale/media/music/image-16.jpg" alt="Malaysia Team"
-                class="w-full h-[220px] object-cover">
-              <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                AI STARTUP COMPANY
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Malaysia Startup, Dedicated Team</h3>
-            <p class="text-sm text-gray-700 mt-2">
-              2020 kami membantu salah satu startup malaysia yang melayani perusahaan oil & gas untuk entry & extraction
-              data untuk AI Learning
-            </p>
-            <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
-              Data Entry Dedicated Team &nbsp;&rarr;
-            </a>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="group">
-            <div class="relative overflow-hidden rounded-lg shadow-md">
-              <img src="https://upscale.id/template/upscale/media/photo/image-10.jpg" alt="Cakap Team"
-                class="w-full h-[220px] object-cover">
-              <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                STARTUP EDUCATION
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Cakap, Dedicated Office & Team</h3>
-            <p class="text-sm text-gray-700 mt-2">
-              Sejak tahun 2015 s/d 2020 membantu Cakap mendapatkan belasan programer & mengelola development office di
-              jogja.
-            </p>
-            <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
-              Dodi Prakoso Wibowo &nbsp;&rarr;
-            </a>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="group">
-            <div class="relative overflow-hidden rounded-lg shadow-md">
-              <img src="https://upscale.id/template/upscale/media/photo/image-9.jpg" alt="Krafthaus Team"
-                class="w-full h-[220px] object-cover">
-              <div class="absolute top-4 right-3 bg-[#002b5b] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                DIGITAL AGENCY
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Krafthaus, Corporate Management</h3>
-            <p class="text-sm text-gray-700 mt-2">
-              Sejak tahun 2012 telah dipercaya oleh perusahaan Australia sebagai Managing Director untuk mengelola cabang
-              di Indonesia
-            </p>
-            <a href="#" class="inline-block mt-3 text-sky-600 text-sm font-semibold hover:underline">
-              Arief Widyananda &nbsp;&rarr;
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Consultation Form -->
-    <section class="bg-[#f5fbff] py-20">
-      <div class="container max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10 text-center">
-        <h2 class="text-2xl md:text-3xl font-semibold text-[#001c3d]">
-          Simple & an affordable price plans for everyone
-        </h2>
-        <p class="text-sm text-[#5f7896] mt-2">
-          Paket harga dengan konsep yang sederhana & terjangkau untuk semua orang. Baik skala <br />
-          Coorporate, startup sampai dengan UKM
-        </p>
-
-        <!-- Form Box -->
-        <div class="mt-10 bg-white shadow-md rounded-md p-6 md:p-10 text-left flex flex-col md:flex-row gap-6">
-
-          <!-- Left Text -->
-          <div class="md:w-1/2">
-            <h3 class="text-xl font-semibold text-[#001c3d] mb-2">Ingin Konsultasi<br />Kebutuhan Anda?</h3>
-            <p class="text-sm text-gray-600 mb-4">
-              Bisnis analis kami akan membantu Anda <br />
-              dalam menentukan kualifikasi talent.
-            </p>
-            <div class="text-sm text-[#001c3d] space-y-2">
-              <div class="flex items-center gap-2">
-                <img src="https://flagcdn.com/w40/id.png" alt="Indonesia Flag" class="w-5 h-4" />
-                +62 87 888 666 531
-              </div>
-              <div class="flex items-center gap-2">
-                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-5 h-4" />
-                +61 3 9010 6067
-              </div>
-            </div>
-          </div>
-
-          <!-- Form -->
-          <div class="md:w-1/2 space-y-4">
-            <input type="text" placeholder="Name"
-              class="w-full border border-gray-300 text-gray-600 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
-            <div class="flex flex-col md:flex-row gap-4">
-              <input type="text" placeholder="Phone"
-                class="w-full border border-gray-300 text-gray-600 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
-              <input type="email" placeholder="Email"
-                class="w-full border border-gray-300 text-gray-600 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300" />
-            </div>
-            <textarea rows="4" placeholder="Write something ..."
-              class="w-full border border-gray-300 text-gray-600 rounded px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
-            <button class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
-              Send inquiry
-            </button>
-          </div>
         </div>
       </div>
     </section>
@@ -462,6 +369,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!-- Custom Script -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
