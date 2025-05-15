@@ -162,7 +162,7 @@
   <!-- Login Modal -->
   <div id="loginModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
     <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-8 relative">
-      <button onclick="toggleLoginModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl leading-none">&times;</button>
+      <button id="login-modal-close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl leading-none">&times;</button>
       <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Login Dashboard</h2>
       <form class="space-y-5">
         <div>
@@ -473,16 +473,14 @@
       const mobileMenu = document.getElementById('mobile-menu');
 
       mobileMenuButton.addEventListener('click', (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         const isVisible = mobileMenu.classList.contains('translate-y-0');
 
         if (isVisible) {
-          // Sembunyikan menu
           mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
           mobileMenu.classList.add('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
           document.body.style.overflow = 'auto';
         } else {
-          // Tampilkan menu
           mobileMenu.classList.remove('translate-y-[-100%]', 'opacity-0', 'pointer-events-none');
           mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
           document.body.style.overflow = 'hidden';
@@ -610,6 +608,7 @@
 
       const loginBtn = document.getElementById('login-btn');
       const mobileLoginBtn = document.getElementById('mobile-login-btn');
+      const closeModalBtn = document.getElementById('login-modal-close'); // 👈 Tambahan baru
 
       loginBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -617,6 +616,11 @@
       });
 
       mobileLoginBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleLoginModal();
+      });
+
+      closeModalBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleLoginModal();
       });
